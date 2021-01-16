@@ -1,0 +1,52 @@
+body {
+  background: rgb(27, 27, 27);
+  margin: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  background: #232223;
+  padding: 2em;
+
+  h1 { margin: 0; }
+
+  p { color: gray; }
+}
+
+button {
+  background: #343434;
+  margin-top: 2em;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  // to access anything behind the svg element 
+  outline: 0;
+  // handpointer
+  cursor: pointer;
+
+  &:hover { background: #424242; }
+
+  &:active { background: orange; }
+}
+
+.svg {
+  width: 200px;
+  position: absolute;
+  top: -40px;
+  left: -30px;
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
